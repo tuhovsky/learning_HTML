@@ -1,34 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="author" content="Paul Tuhovsky">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paul</title>
   <link href="styles.css" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    }
+  </script>
 </head>
 <body>
 
-  <h1>My First JavaScript</h1>
-
-  <p>Here, JavaScript changes the value of the src (source) attribute of an 
-    image.</p>
-
-  <script>
-    function light(sw) {
-      var pic;
-      if (sw==0) {
-        pic = "images/pic_bulboff.gif"
-      } else {
-        pic = "images/pic_bulbon.gif"
-      }
-      document.getElementById('myImage').src = pic;
-    }
-  </script>
-
-  <img id="myImage" src="images/pic_bulboff.gif" width="100" height="180">
-
-  <p>
-    <button type="button" onclick="light(1)">Light On</button>
-    <button type="button" onclick="light(0)">Light Off</button>
-  </p>
+  <h1>Paul's Web Page</h1>
+  <p id="demo">A paragraph</p>
+  <button type="button" onclick="myFunction()">Try it!</button>
 
 </body>
 </html>
