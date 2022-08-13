@@ -2,30 +2,39 @@
     box-sizing: border-box;
 }
 
-.left {
-    background-color: #2196F3;
-    padding: 20px;
+.menu {
     float: left;
-    width: 20%; /* The width is 20% by default */
+    width: 20%;
+    text-align: center;
+}
+
+.menu a {
+    background-color: #e5e5e5;
+    padding: 8px;
+    margin-top: 7px;
+    display: block;
+    width: 100%;
+    color: black;
 }
 
 .main {
-    background-color: #f1f1f1;
-    padding: 20px;
     float: left;
-    width: 60%; /* The width is 60%, by default */
+    width: 60%;
+    padding: 0 20px;
 }
 
 .right {
-    background-color: #04AA6D;
-    padding: 20px;
+    background-color: #e5e5e5;
     float: left;
-    width: 20%; /* The width is 20%, by default */
+    width: 20%;
+    padding: 15px;
+    margin-top: 7px;
+    text-align: center;
 }
 
-/* Use a media query to add a break point at 800px: */
-@media screen and (max-width: 800px) {
-    .left, .main, .right {
-      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+@media only screen and (max-width: 620px) {
+    /* For mobile phones */
+    .menu, .main, .right {
+        width: 100%;
     }
 }
