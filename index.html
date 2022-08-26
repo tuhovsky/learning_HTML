@@ -8,20 +8,14 @@
 </head>
 <body>
   
-  <h1>The form novalidate attribute</h1>
+  <h2>Textarea</h2>
+  <p>The textarea element defines a multi-line input field.</p>
 
-  <p>The novalidate attribute indicates that the form input is not to be 
-    validated on submit:</p>
-
-  <form>
-    <label for="email">Enter your email:</label>
-    <input type="text" id="email" name="email"><br><br>
+  <form action="/action_page.php">
+    <textarea name="message" style="width:250px;height:50px;">The cat was playing in the garden.</textarea>
+    <br><br>
     <input type="submit">
   </form>
-
-  <p><strong>Note:</strong> The novalidate attribute of the form tag is not 
-    supported in Safari 10 (or earlier).
-  </p>
 
 </body>
 </html>
