@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Classes</title>
+    <title>JavaScript</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h2>Using The id Attribute in JavaScript</h2>
-    <p>JavaScript can access an element with a specified id by using the getElementById() method:</p>
-
-    <h1 id="myHeader">Hello World!</h1>
-    <button onclick="displayResult()">Change text</button>
-
+    <h1>My First JavaScript</h1>
+    <p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
     <script>
-        function displayResult() {
-            document.getElementById("myHeader").innerHTML = "Have a nice day!";
+        function light(sw) {
+            var pic;
+            if (sw == 0) {
+                pic = "images/pic_bulboff.gif"
+            } else {
+                pic = "images/pic_bulbon.gif"
+            }
+            document.getElementById("myImage").src = pic;
         }
     </script>
+
+    <img id="myImage" src="images/pic_bulboff.gif" width="100" height="180" alt="">
+
+    <p>
+        <button type="button" onclick="light(1)">Light On</button>
+        <button type="button" onclick="light(0)">Light Off</button>
+    </p>
 </body>
 </html>
