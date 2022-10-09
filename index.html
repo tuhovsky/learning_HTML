@@ -7,12 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>Email Field</h2>
-    <p>The <strong>input type="email"</strong> is used for input fields that should contain an e-mail address:</p>
+    <h1>Display a Week Input Control</h1>
+    <p>The <strong>input type="week"</strong> allows the user to select a week and year.</p>
+    <p>If the browser supports it, a date picker pops up when entering the input field.</p>
     <form>
-        <label for="email">Enter your e-mail:</label>
-        <input type="email" id="email" name="email">
+        <label for="week">Select a week:</label>
+        <input type="week" id="week" name="week">
         <input type="submit" value="Submit">
     </form>
+    <p><strong>Note:</strong> type="week" is not supported in Firefox, Safari or Internet Explorer 11.</p>
 </body>
 </html>
